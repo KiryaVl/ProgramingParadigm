@@ -84,5 +84,4 @@ def ticTacToe():
 
 
 if __name__ == "__main__":
-    printBoardNumbers()
     ticTacToe()
