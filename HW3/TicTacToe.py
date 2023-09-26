@@ -20,12 +20,14 @@ def displayBoard(board):
     print("-----------")
     print(f" {board[0][0]} | {board[0][1]} | {board[0][2]} ")
 
+
 def printBoardNumbers():
     print("\n 7 | 8 | 9")
     print("-----------")
     print(" 4 | 5 | 6")
     print("-----------")
     print(" 1 | 2 | 3\n")
+
 
 def checkWinner(board, player):
     for row in board:
@@ -41,8 +43,10 @@ def checkWinner(board, player):
 
     return False
 
+
 def isBoardFull(board):
     return all(cell != ' ' for row in board for cell in row)
+
 
 def getPlayerMove(board, player):
     while True:
@@ -57,6 +61,7 @@ def getPlayerMove(board, player):
             return row, col
         except ValueError:
             print("Некорректный ввод! Введите номер поля от 1 до 9.")
+
 
 def ticTacToe():
     board = [[' ' for i in range(3)] for j in range(3)]
