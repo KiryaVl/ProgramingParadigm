@@ -59,7 +59,7 @@ def getPlayerMove(board, player):
             print("Некорректный ввод! Введите номер поля от 1 до 9.")
 
 def ticTacToe():
-    board = [[' ' for j in range(3)] for i in range(3)]
+    board = [[' ' for i in range(3)] for j in range(3)]
     currentPlayer = 'X'
 
     print("Добро пожаловать в игру Крестики-нолики!")
